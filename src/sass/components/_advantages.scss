@@ -1,0 +1,124 @@
+.advantages-section {
+  background-color: $background-color;
+  @media screen and (min-width: $tablet) {
+    padding: 60px 0;
+  }
+}
+
+.advantages-section__container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding: 0 30px;
+  }
+  @media screen and (min-width: $desk) {
+    width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+.advantages-section__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.advantages-section__data-container::before {
+  content: '';
+  background-color: #f8d24e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.advantages-section__data-container-cow::before {
+  content: url(../images/advantages-cow-mobile.png);
+}
+
+.advantages-section__data-container-weight::before {
+  content: url(../images/advantages-weight-mobile.png);
+}
+
+.advantages-section__data-container-ice-cream::before {
+  content: url(../images/advantages-ice-cream-mobile.png);
+}
+
+.advantages-section__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: $text-white;
+}
+
+@media (max-width: 767.98px) {
+  .advantages-section__container {
+    padding-bottom: 64px;
+  }
+  .advantages-section__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages-section__list {
+    display: flex;
+  }
+  .advantages-section__item:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages-section {
+    padding-top: 0;
+    padding-bottom: 204px;
+  }
+  .advantages-section__title {
+    font-size: 48px;
+    line-height: 1.23;
+    color: $text-white;
+    margin-top: 32px;
+  }
+  .advantages-section__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-section {
+    padding-bottom: 209px;
+  }
+  .advantages-section__item:not(:last-child) {
+    margin-right: 92px;
+  }
+  .advantages-section__item {
+    max-width: 288px;
+  }
+  .advantages-section__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 58px;
+    color: $text-white;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  .advantages-section__text {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}

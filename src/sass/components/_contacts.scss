@@ -1,0 +1,229 @@
+.contacts-section {
+    background-color: #84A178;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    @media screen and (min-width:$tablet){
+        gap: 16px;
+        margin-top: 96px;
+    }
+    @media screen and (min-width:$desk) {
+        gap: 32px;
+    }
+    
+    &__card {
+        padding: 40px 32px;
+        width: 322px;
+        margin: 0 auto;
+        min-height: 412px;
+        background: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        @media screen and (max-width:$tablet) {
+            &:first-child {
+                margin-top: -300px;
+            }
+        }
+        @media screen and (min-width:$tablet) {
+            margin-top: -304px;
+            width: 224px;
+            min-height: 528px;
+        }
+        @media screen and (min-width:$desk) {
+            margin-top: -96px;
+            width: 368px;
+            min-height: 538px;
+        }
+    }
+    &__card-meta {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        @media screen and (min-width:$tablet) {
+            font-size: 14px;
+        }
+        @media screen and (min-width:$desk) {
+            font-size: 16px;
+        }
+
+    }
+    &__card-paragraph {
+        border-bottom: 1px solid #ABABAB;
+        margin-top: 24px;
+
+        @media screen and (min-width:$tablet) {
+            margin-top: 32px;
+        }
+    &__card-paragraph--fit {
+        padding-right: 20px;
+    }
+    }
+    &__card-city {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 12px;            
+        }
+    }
+    &__card-address {
+        margin-bottom: 24px;
+        color: #D6936D;
+        @media screen and (min-width:$mobile) and (max-width:$tablet) {
+            padding-right: 44px;
+        }
+        @media screen and (min-width:$desk) {
+            padding-right: 20px;
+        }
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 32px;
+        }
+
+    }
+    &__card-worktime {
+        margin-bottom: 8px;
+        color: #ABABAB;
+
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 12px;            
+        }
+    }
+    &__card-social {
+        margin-top: 24px;
+        fill: #D6936D;
+
+        @media screen and (min-width:$tablet) {
+            margin-top: 32px;
+        }
+    }
+}
+.contacts__card-social--brown {
+    color: #D6936D;
+    line-height: 1.5;
+}
+.contacts__cart-worktime--mrgn {
+    margin-bottom: 24px;
+    color: #ABABAB;
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 24px;
+    }
+}
+.contacts-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 32px;
+    align-content: center;
+    margin-top: 32px;
+    @media screen and (min-width:$tablet) {
+        flex-flow: nowrap;
+        margin-top: 60px;
+        justify-content: center;
+    @media screen and (min-width:$desk) {
+        margin-top: 64px;
+    }
+    }
+    &__first {
+        @include flexCenter();
+        padding: 13px 15px;
+
+        font-family: 'montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        min-width: 161px;
+        line-height: 1.29;
+        color: #000;
+        background-color: #F8D24E;
+        border: 2px solid $accent-color;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color $transition, border $transition;
+        @media screen and (min-width:$tablet) {
+            width: 192px;
+            height: 42px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.29;
+        }
+    
+    }
+    &__first:hover, &__first:focus {
+        border: 2px solid #0A8817;;
+        background-color: #0A8817
+        
+    }
+    &__first:active {
+        border: 2px solid #ABABAB;
+        background-color: #ABABAB;
+        
+    }
+    
+    &__second {
+        @extend %button;
+        margin-top: 8px;
+        font-size: 16px;
+        min-width: 161px;
+        font-weight: 700;
+        color: white;
+        @media screen and (min-width:$tablet) {
+            margin-left: 16px;
+            margin-top: 0;
+            min-width: 158px;
+            height: 42px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.29;
+        }
+       
+    }
+    &__second:hover, &__second:focus {
+        border: 2px solid #0A8817;
+    }
+    &__second:active {
+        border: 2px solid #ABABAB;
+        
+    }
+
+}
+.contacts-arrow {
+    display: flex;
+}
+.contacts__arrow::after {
+    content: url(../images/contacts-arrow.svg);
+    margin-left: 15px;
+}
+.contacts__arrow--black::after {
+    content: url(../images/contacts-arrow-black.svg);
+    margin-left: 15px;
+    fill: black;
+}
+.card-title {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #F8D24E;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    &__cafe {
+        text-transform: uppercase;
+        color: #FCFCFC;
+        @media screen and (min-width:$tablet) {
+            color: black;
+        }
+    }
+}
+
+.card-social {
+    margin-top: 24px;
+    color: #D6936D;
+    @media screen and (min-width:$tablet) {
+        margin-top: 32px;
+    }
+}

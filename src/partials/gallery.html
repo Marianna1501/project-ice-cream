@@ -1,0 +1,183 @@
+<!-- СЕКЦИИ ГАЛЛЕРЕЯ И ОТЗЫВЫ ОБЬЕДИНЕНЫ, Т.К. ИМЕЮТ ОДНУ ОБЕРТУ ДЛЯ ОБЩЕГО БЕКГРАУНДА -->
+<div class="sections-wrapper">
+  <!-- СЕКЦИЯ ГАЛЕРЕЯ -->
+  <section class="gallery">
+    <!-- СКРЫТЫЙ ЩАГОЛОВОК ОТ ЗРЯЧИХ ПОЛЬЗОВАТЕЛЕЙ -->
+    <h2 class="gallery__head">Галерея изображений нашего продукта</h2>
+    <div class="gallery__wrapper">
+      <!-- КАРТИНКА ИЗ МАКЕТА -->
+      <picture>
+        <source
+          srcset="
+            ./images/gallery1-1013-@1x.jpg 1x,
+            ./images/gallery1-1013-@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery1-704-@1x.jpg 1x,
+            ./images/gallery1-704-@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery1-440-@1x.jpg 1x,
+            ./images/gallery1-440-@2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          loading="lazy"
+          class="gallery__image d0 row_left_right"
+          src="./images/gallery1-440-@1x.jpg"
+          alt="Самое вкусное мороженное"
+        />
+      </picture>
+      <!-- КАРТИНКА 2 -->
+      <picture>
+        <source
+          srcset="
+            ./images/gallery2-1013-@1x.jpg 1x,
+            ./images/gallery2-1013-@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery2-704-@1x.jpg 1x,
+            ./images/gallery2-704-@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery2-440-@1x.jpg 1x,
+            ./images/gallery2-440-@2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          loading="lazy"
+          class="gallery__image d3000 row_left_right"
+          src="./images/gallery2-440-@1x.jpg"
+          alt="Самое вкусное мороженное"
+        />
+      </picture>
+      <!-- КАРТИНКА 3 -->
+      <picture>
+        <source
+          srcset="
+            ./images/gallery3-1013-@1x.jpg 1x,
+            ./images/gallery3-1013-@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery3-704-@1x.jpg 1x,
+            ./images/gallery3-704-@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery3-440-@1x.jpg 1x,
+            ./images/gallery3-440-@2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          loading="lazy"
+          class="gallery__image d6000 row_left_right"
+          src="./images/gallery3-440-@1x.jpg"
+          alt="Самое вкусное мороженное"
+        />
+      </picture>
+    </div>
+    <button class="click-me">Click ME!!!</button>
+  </section>
+
+  <!-- СЕКЦИЯ ОТЗЫВЫ КЛИЕНТОВ -->
+  <section class="feedback">
+    <!-- СКРЫТЫЙ ЩАГОЛОВОК ОТ ЗРЯЧИХ ПОЛЬЗОВАТЕЛЕЙ -->
+    <h2 class="feedback__head" id="about">Отзывы наших клиентов</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- ПЕРВЫЙ ОТЗЫВ -->
+        <div class="swiper-slide">
+          <img
+            loading="lazy"
+            class="feedback__image"
+            srcset="
+              ./images/hot_girl_1@1x.jpg 1x,
+              ./images/hot_girl_1@2x.jpg 2x
+            "
+            src="./images/hot_girl_1@1x.jpg"
+            alt="Emily, Los Angeles"
+          />
+          <div class="feedback__text">
+            <p class="feedback__text--gradient">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+          </div>
+          <p class="feedback__caption">Emily, Los Angeles</p>
+        </div>
+        <!-- ВТОРОЙ ОТЗЫВ -->
+        <div class="swiper-slide">
+          <img
+            class="feedback__image"
+            srcset="
+              ./images/hot_girl_2@1x.jpg 1x,
+              ./images/hot_girl_2@2x.jpg 2x
+            "
+            src="./images/hot_girl_2@1x.jpg"
+            alt="Mary, Konotop"
+          />
+          <div class="feedback__text">
+            <p class="feedback__text--gradient">
+              Мороженое по моим меркам выглядит сногсшибательно! Красный рожок и
+              насыщенный клубничный вкус! Мороженое мне очень понравилось как
+              внешне, так по вкусу.
+            </p>
+          </div>
+          <p class="feedback__caption">Mary, Konotop</p>
+        </div>
+        <!-- ТРЕТИЙ ОТЗЫВ -->
+        <div class="swiper-slide">
+          <img
+            loading="lazy"
+            class="feedback__image"
+            srcset="
+              ./images/hot_girl_3@1x.jpg 1x,
+              ./images/hot_girl_3@2x.jpg 2x
+            "
+            src="./images/hot_girl_1@1x.jpg"
+            alt="Ann, Bobruysk"
+          />
+          <div class="feedback__text">
+            <p class="feedback__text--gradient">
+              Я еле справилась с таким объемом. Но и удовольствие при этом тоже
+              получила. Во-первых, мороженое очень красивое! Во-вторых, вкусное.
+            </p>
+          </div>
+          <p class="feedback__caption">Ann, Bobruysk</p>
+        </div>
+      </div>
+      <!-- swiper-wrapper -->
+      <div class="swiper-pagination" id="contact"></div>
+    </div>
+    <!-- swiper mySwiper -->
+
+    <!-- ЭТО ТРИ ТОЧКИ - НУЖНЫ ДЛЯ ФОРМАЛЬНОГО ИСПОЛНЕНИЯ МИНИМАЛЬНОГО ОБЬЕМА РАБОТЫ -->
+    <!-- <ul class="feedback-dots">
+      <li class="feedback__dot"></li>
+      <li class="feedback__dot"></li>
+      <li class="feedback__dot"></li>
+    </ul> -->
+  </section>
+</div>
